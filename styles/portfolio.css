@@ -36,7 +36,13 @@ p {
   font-size: 16px;
   line-height: 30px;
 }
-
+img {
+  border-radius: 3px;
+}
+img:hover {
+  transform: scale(1.1);
+  transition: all 150ms ease-in-out;
+}
 .hero {
   background: var(--secondary-color);
   text-align: center;
@@ -108,7 +114,7 @@ p {
   padding: 120px 60px;
 }
 .logo {
-  max-height: 40px;
+  max-height: 50px;
 }
 nav {
   padding: 20px 0;
@@ -153,16 +159,25 @@ footer .email-link:hover {
 }
 footer .social-links a {
   margin: 0 20px;
-  color: var(--branding-color);
-  background: var(--secondary-color);
-  padding: 10px 15px;
+  padding: 6px 12px;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 22px;
   transition: all 100ms ease-in-out;
 }
-footer .social-links a:hover {
+footer .github a {
   color: white;
-  background: var(--branding-color);
+  background: #79017a;
+}
+footer .github a:hover {
+  transform: scale(1.1);
+}
+footer .twitter a {
+  color: white;
+  background: #1c99e6;
+}
+footer .linkedin a {
+  color: white;
+  background: #0088d1;
 }
 @media (max-width: 900px) {
   h1 {
